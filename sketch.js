@@ -1,7 +1,7 @@
 //Random
 
 function setup() {
-  createCanvas(windowWidth, windowWidth);
+  createCanvas(windowWidth, windowHeight);
   noFill();
   noStroke();
   frameRate (2);
@@ -23,7 +23,7 @@ function draw() {
   
   
   for(y = 0; y < sideLength * num; y = y + sideLength){
-    for (x = 0; x < sideLength * num; x = x + sideLength){
+    for (x = 0; x < windowHeight; x = x + sideLength){
       fill(random(200, 255), 0, random(200, 255)); //random color RGB
       quad (x + random(-shift,shift), y + random(-shift,shift),
           
@@ -63,6 +63,11 @@ function draw() {
   }
   
   //noLoop();
+}
+
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
 }
 
 
