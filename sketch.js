@@ -24,7 +24,7 @@ function draw() {
   
   for(y = 0; y < sideLength * num; y = y + sideLength){
     for (x = 0; x < sideLength * num; x = x + sideLength){
-      fill(random(50, 255), 0, random(150, 255)); //random color RGB
+      fill(random(200, 255), 0, random(200, 255)); //random color RGB
       quad (x + random(-shift,shift), y + random(-shift,shift),
           
           x + sideLength - space + random(-shift,shift), y + random(-shift,shift),
@@ -57,7 +57,7 @@ function draw() {
   
   for(y = 0; y < sideLength2 * num2; y = y + sideLength2){
     for (x = 0; x < sideLength2 * num2; x = x + sideLength2){
-      fill(random(50, 255), 0, random(250, 255)); //random color RGB
+      fill(random(75, 255), 0, random(200, 255)); //random color RGB
     quad (x + random(-shift2,shift2), y + random(-shift2,shift2), x + sideLength2 - space2 + random(-shift2,shift2), y + random(-shift2,shift2),x + sideLength2 - space2 + random(-shift2,shift2), y + sideLength2- space2 + random(-shift2,shift2), x + random(-shift2,shift2), y+ sideLength2 - space2 + random(-shift2,shift2)); //sq 1
   }
   }
